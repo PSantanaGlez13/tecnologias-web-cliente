@@ -22,10 +22,17 @@
     margin-right: $margin_content;
 }
 
+#product-section {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
 .product {
     @extend .element;
     background-color: $background_color;
     outline: solid purple;
-    height: 30%;
-    width: 30%;
+    //height: 30%;
+    //width: 30%;
 }
