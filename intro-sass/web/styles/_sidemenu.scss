@@ -1,0 +1,10 @@
+@import "_mixins.scss";
+#sidemenu {
+    @include common_area_style;
+    display: flex;
+    @include center_text;
+    grid-area: sidemenu;
+    flex-direction: column;
+    background-color: white;
+    outline: solid black;
+}

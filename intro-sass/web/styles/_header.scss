@@ -1,0 +1,8 @@
+@import "_mixins.scss";
+#header {
+    @include common_area_style;
+    display: flex;
+    grid-area: header;
+    flex-direction: column;
+    background-color: thistle;
+}

@@ -1,0 +1,8 @@
+@import "_mixins.scss";
+#warrant {
+    @include common_area_style;
+    display: flex;
+    grid-area: warrant;
+    flex-direction: column;
+    background-color: thistle;
+}

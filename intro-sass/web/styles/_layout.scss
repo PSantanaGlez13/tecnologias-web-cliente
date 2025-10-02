@@ -1,0 +1,15 @@
+#main {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: 
+        "header header header header"
+        "navbar navbar navbar navbar"
+        "sidemenu content content content"
+        "sidemenu content content content"
+        "sidemenu content content content"
+        "sidemenu content content content"
+        "clients clients clients clients"
+        "warrant warrant warrant warrant"
+}
