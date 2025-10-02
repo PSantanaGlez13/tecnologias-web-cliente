@@ -1,0 +1,24 @@
+@import "_mixins.scss";
+
+.box {
+    display: flex;
+    @include flexbox-direction(false, true);
+    outline: solid black 2px;
+}
+
+.box_element {
+    background-color: lightcoral;
+    margin: 5px;
+    outline: solid black 2px;
+}
+
+$elements: [["big", 500px, 250px],
+            ["medium", 250px, 125px],
+            ["small", 100px, 50px]];
+
+@each $name, $width, $height in $elements {
+    .#{$name}-element {
+        @extend .box_element;
+        @include sizer($width, $height);
+    }
+}

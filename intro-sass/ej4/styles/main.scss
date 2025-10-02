@@ -1,0 +1,5 @@
+@for $val from 1 through 5 {
+    .margin-#{$val} {
+        margin: 10px * $val;
+    }
+}

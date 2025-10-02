@@ -1,0 +1,14 @@
+@import "_colors.scss";
+
+h1 {
+    color: $primary;
+}
+
+h2 {
+    color: $secondary;
+}
+
+body {
+    outline: solid $primary;
+    border-radius: 2px;
+}

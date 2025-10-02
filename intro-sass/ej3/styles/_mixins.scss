@@ -1,0 +1,17 @@
+@mixin flexbox-direction ($is_column: false, $is_reverse: false) {
+    $value: "";
+    @if $is_column { 
+        $value: "column";
+    } @else {
+        $value: "row";
+    }
+    @if $is_reverse {
+        $value: $value +"-reverse";
+    }
+    flex-direction: #{$value};
+}
+
+@mixin sizer ($width, $height) {
+    width: $width;
+    height: $height;
+}

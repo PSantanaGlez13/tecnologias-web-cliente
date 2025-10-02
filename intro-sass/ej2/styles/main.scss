@@ -1,0 +1,19 @@
+@import "_base-message.scss";
+
+$messages: ( 
+    "error": red,
+    "info": yellow,
+    "success": green
+);
+
+@each $name, $color in $messages {
+    .#{$name}-message {
+        @extend .base_message;
+        background-color: $color;
+        @if $name == "error" {
+            a: {
+                font-weight: bold;
+            }
+        }
+    }
+}
