@@ -1,0 +1,32 @@
+#header {
+    display: flex;
+    grid-area: header;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: navy;
+    color: white;
+    width: 100vw;
+    overflow: hidden;
+    align-items: center;
+}
+
+#header h1 {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#img-wrapper {
+    display: flex;
+    height: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+#header-img {
+    display: block;
+    height: 100%;
+    max-height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}

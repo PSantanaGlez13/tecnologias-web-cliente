@@ -1,0 +1,17 @@
+@import "_base.scss";
+@import "_mixins.scss";
+#clients {
+    @include common_area_style;
+    display: flex;
+    grid-area: clients;
+    flex-direction: row;
+    background-color: thistle;
+    justify-content: space-evenly
+}
+
+.testimony {
+    @extend .element;
+    outline-color: purple;
+    background-color: plum;
+    width: 15%;
+}

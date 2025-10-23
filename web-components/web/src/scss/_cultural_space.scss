@@ -1,0 +1,15 @@
+cultural-space {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    flex-grow: 1;
+    width: 40%;
+    height: 40%;
+    overflow: hidden;
+}

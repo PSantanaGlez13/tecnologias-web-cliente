@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review web app</title>
+    <script type="module" src="js/main.js"></script>
+    <!--
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" />
+    -->
+    <template id="cultural-space-template">
+      <style>
+        button {
+          background-color: navy;
+          color: white;
+          width: 90%;
+          height: 20%;
+        }
+        button.highlighted {
+          background-color: gray;
+          color: black;
+        }
+        img {
+          background-color: gray;
+          height: 50%;
+          object-fit: contain;
+        }
+      </style>
+      <img id="cultural-space-img"></img>
+      <button id="show-info">Ver información</button>
+    </template>
+
+    <template id="info-display-empty-template">
+      <style>
+        h2, h3 {
+          color: lightgray;
+        }
+      </style>
+        <h2>Seleccione un espacio para más información</h2>
+    </template>
+
+    <template id="info-display-template">
+      <style>
+        img {
+          display: block;
+          width: 90%;
+          margin-top: 5%;
+          margin-left: 5%;
+          border-style: solid;
+          border-radius: 1px;
+          border-color: black;
+        }
+      </style>
+      <img id="detail-img"></img>
+      <h2 id="title"></h2>
+      <h3>Valoraciones</h3>
+      <p id="1"> </p>
+      <p id="2"> </p>
+      <p id="3"> </p>
+      <p id="4"> </p>
+      <p id="5"> </p>
+      <p id="mean"> </p>
+    </template>
+
+
+
+    <link rel="stylesheet" href="scss/main.scss">
+  </head>
+  <body>
+    <div id="header">
+      <div id="img-wrapper">
+        <img id="header-img" src="assets/bandera-canarias.png"></img>        
+      </div>
+      <h1>Espacios culturales Canarias</h1>
+    </div>
+    <div id="content">
+      <cultural-space id="0"></cultural-space>
+      <cultural-space id="1"></cultural-space>
+      <cultural-space id="4"></cultural-space>
+      <cultural-space id="5"></cultural-space>
+    </div>
+    <div id="sidebar">
+      <info-display></info-display>
+    </div>
+    <div id="footer"><h2></h2></div>
+  </body>
+</html>

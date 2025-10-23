@@ -1,0 +1,16 @@
+{
+  "name": "web-components-lab",
+  "private": true,
+  "version": "0.0.0",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "npx parcel",
+    "build": "npx parcel build",
+    "mock": "npx json-server data/espacios-culturales.json"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.0",
+    "json-server": "^1.0.0-beta.3",
+    "parcel": "^2.14.0"
+  }
+}

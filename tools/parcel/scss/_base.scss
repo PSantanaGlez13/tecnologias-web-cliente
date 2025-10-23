@@ -1,0 +1,9 @@
+@import "_mixins.scss";
+.element {
+    display: flex;
+    @include center_text;
+    border-radius: 3px;
+    outline-style: solid;
+    margin: 5px;
+
+}

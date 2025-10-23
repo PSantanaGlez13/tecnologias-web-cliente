@@ -1,0 +1,14 @@
+@import '_header.scss';
+@import '_sidebar.scss';
+@import '_cultural_space.scss';
+@import '_layout.scss';
+@import '_content.scss';
+@import '_footer.scss';
+@import '_info_display.scss';
+
+html {
+  background-color: gainsboro;
+  font-family: system-ui;
+  display: flex;
+  height: 100%;
+}

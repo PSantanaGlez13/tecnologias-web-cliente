@@ -1,0 +1,9 @@
+@import "_mixins.scss";
+@import "_variables.scss";
+#navbar {
+    @include common_area_style;
+    display: flex;
+    grid-area: navbar;
+    flex-direction: column;
+    background-color: thistle;
+}

@@ -1,0 +1,9 @@
+#footer {
+    display: flex;
+    grid-area: footer;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+    background-color: #404040; // dark gray
+}

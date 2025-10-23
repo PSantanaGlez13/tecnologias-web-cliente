@@ -1,0 +1,18 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    row-gap: 5px;
+    column-gap: 5px;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+        "header header header header"
+        "content content sidebar sidebar"
+        "content content sidebar sidebar"
+        "content content sidebar sidebar"
+        "content content sidebar sidebar"
+        "footer footer footer footer"
+}
